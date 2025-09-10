@@ -3,3 +3,10 @@
   to = "http://13.201.62.152:8080/api/:splat"
   status = 200
   force = true
+
+  
+# Redirect all routes to index.html for React Router
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
