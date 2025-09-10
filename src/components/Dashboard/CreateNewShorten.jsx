@@ -32,7 +32,7 @@ const CreateNewShorten = ({setOpen, refetch}) => {
               Authorization: "Bearer " + token,
             },
         });
-          const shortenUrl = `${import.meta.env.VITE_REACT_SUBDOMAIN + "/s/" + `${res.shortUrl}`}`;
+          const shortenUrl = `${import.meta.env.VITE_REACT_SUBDOMAIN}/${res.shortUrl}}`;
           navigator.clipboard.writeText(shortenUrl).then(()=>{
             toast.success("Short URL Copied to ClipBoard", {
                 position: "bottom-center",
