@@ -4,9 +4,8 @@
   status = 200
   force = true
 
-# Short links (e.g., /abcd123) go to backend
 [[redirects]]
-  from = "/:code"
+  from = "/:code([a-zA-Z0-9]{6,10})"
   to = "http://13.201.62.152:8080/:code"
   status = 200
   force = true
