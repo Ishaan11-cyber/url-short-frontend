@@ -4,6 +4,12 @@
   status = 200
   force = true
 
+# Short links (e.g., /abcd123) go to backend
+[[redirects]]
+  from = "/:code"
+  to = "http://13.201.62.152:8080/:code"
+  status = 200
+  force = true
   
 # Redirect all routes to index.html for React Router
 [[redirects]]
