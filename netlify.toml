@@ -7,7 +7,7 @@
 [[redirects]]
   from = "/:code([a-zA-Z0-9]{6,10})"
   to = "http://13.201.62.152:8080/:code"
-  status = 200
+  status = 302
   force = true
 
 # React Router catch-all
