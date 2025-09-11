@@ -10,7 +10,13 @@
   status = 200
   force = true
 
-# Redirect all other routes to index.html for React Router
+# React Router catch-all
+[[redirects]]
+  from = "/dashboard"
+  to = "/index.html"
+  status = 200
+  force = true
+
 [[redirects]]
   from = "/dashboard/*"
   to = "/index.html"
