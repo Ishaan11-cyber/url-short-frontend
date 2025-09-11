@@ -18,10 +18,8 @@ const ShortenItem = ({ originalUrl, shortUrl, clickCount, createdDate }) => {
     const [selectedUrl, setSelectedUrl] = useState("");
     const [loader, setLoader] = useState(false);
     const [analyticsData, setAnalyticsData] = useState([]);
-    const subDomain = (import.meta.env.VITE_REACT_SUBDOMAIN || '').replace(
-        /^https?:\/\//,
-        ""
-    );
+  const subDomain = "short.ly";
+
     const analyticsHandler = (shortUrl) => {
         if (!analyticToggle) {
             setSelectedUrl(shortUrl);
@@ -62,7 +60,7 @@ const ShortenItem = ({ originalUrl, shortUrl, clickCount, createdDate }) => {
                             target="_blank"
                             className="text-[17px] font-montserrat font-[600] text-linkColor"
                         >
-                            {subDomain + "/" + shortUrl}
+                            {"short.ly/" + shortUrl}
                         </a>
                         <FaExternalLinkAlt className="text-linkColor" />
                     </div>
