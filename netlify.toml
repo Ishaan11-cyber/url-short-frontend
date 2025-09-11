@@ -5,8 +5,8 @@
   force = true
 
 [[redirects]]
-  from = "/:code([a-zA-Z0-9]{6,10})"
-  to = "http://13.201.62.152:8080/:code"
+  from = "/:shortcode"
+  to = "http://13.201.62.152:8080/:shortcode"
   status = 302
   force = true
 
