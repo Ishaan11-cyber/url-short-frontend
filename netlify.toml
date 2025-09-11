@@ -9,10 +9,16 @@
   to = "http://13.201.62.152:8080/:code"
   status = 200
   force = true
-  
-# Redirect all routes to index.html for React Router
+
+# Redirect all other routes to index.html for React Router
 [[redirects]]
-  from = "/*"
+  from = "/dashboard/*"
   to = "/index.html"
   status = 200
-  force=true
+  force = true
+
+[[redirects]]
+  from = "/"
+  to = "/index.html"
+  status = 200
+  force = true
